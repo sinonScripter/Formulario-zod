@@ -8,7 +8,7 @@ import styles from './Form.module.css';
 const schema = z.object({
     name: z.string().min(3, 'Nome Inválido'),
     Email: z.string().email('Email Inválido'),
-    Password: z.string().min(6, 'Senha muito fraca')
+    Password: z.string().min(8, 'Senha muito fraca')
 });
 
 export default function FormPaga() {
